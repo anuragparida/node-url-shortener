@@ -16,6 +16,7 @@ const redirectRoutes = require("./routes/redirect");
 const createRoutes = require("./routes/create");
 const errorController = require("./controllers/error");
 
+app.use("/create", createRoutes);
 app.use("/:url", redirectRoutes);
 app.use(createRoutes);
 app.use(errorController.get404);
