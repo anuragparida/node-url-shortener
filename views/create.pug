@@ -1,0 +1,9 @@
+extends layouts/main.pug
+
+block content
+  form(action="/create" method="POST")
+    label(for="mainUrl") Your URL
+    input(type="text", name="mainUrl")
+    label(for="shortenedUrl") Shortened URL (Optional)
+    input(type="text", name="shortenedUrl")
+    button(type="submit") Submit
