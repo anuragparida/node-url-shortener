@@ -1,3 +1,3 @@
 exports.getRedirect = (req, res, next) => {
-  res.redirect("www.google.com");
+  console.log(req.originalUrl.slice(1));
 };
